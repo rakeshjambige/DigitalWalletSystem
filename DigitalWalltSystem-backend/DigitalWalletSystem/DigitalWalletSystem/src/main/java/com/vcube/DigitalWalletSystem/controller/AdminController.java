@@ -33,26 +33,26 @@ public class AdminController {
     private TransactionService transactionService;
     
 
-    // ✅ 1. View all users
+    //  1. View all users
     @GetMapping("/users")
     public ResponseEntity<?> getAllUsers() {
         return ResponseEntity.ok(userService.getAllUsers());
     }
 
-    // ✅ 2. View all transactions
+    //  2. View all transactions
     @GetMapping("/transactions")
     public ResponseEntity<?> getAllTransactions() {
         return ResponseEntity.ok(transactionService.getAllTransactions());
     }
 
-    // ✅ 3. Delete a user
+    //  3. Delete a user
     @DeleteMapping("/users/{id}")
     public ResponseEntity<?> deleteUser(@PathVariable Long id) {
         userService.deleteUserById(id);
         return ResponseEntity.ok("User deleted successfully");
     }
 
-//    // ✅ 4. Update user balance (deposit or correction)
+//    //  4. Update user balance (deposit or correction)
 //    @PutMapping("/users/{id}/balance")
 //    public ResponseEntity<String> updateUserBalance(@PathVariable Long id, @RequestParam double amount) {
 //        userService.updateUserBalance(id, amount);
@@ -64,7 +64,7 @@ public class AdminController {
         return ResponseEntity.ok(walletService.getAllWallets());
     }
 
-    // ✅ 6. View a specific user's wallet
+    //  6. View a specific user's wallet
     @GetMapping("/wallets/{userId}")
     public ResponseEntity<?> getWalletByUserId(@PathVariable Long userId) {
         Optional<WalletAccount> walletOpt = walletService.getWalletByUserId(userId);
