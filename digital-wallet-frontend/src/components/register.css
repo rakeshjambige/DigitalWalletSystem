@@ -1,0 +1,121 @@
+/* Full-screen container with soft green gradient */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading & Subtitle */
+.register-heading {
+  font-size: 2.8rem;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.register-subtitle {
+  font-size: 1rem;
+  color: #4caf50;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+.register-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Floating label input */
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 50px;
+  border: 1px solid #c8e6c9;
+  font-size: 1rem;
+  outline: none;
+  background-color: #f1f8f1;
+  transition: 0.3s;
+}
+
+.form-group label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2e3d29;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 15px;
+  font-size: 0.8rem;
+  color: #2e7d32;
+  background-color: transparent;
+  padding: 0 5px;
+}
+
+.form-group input:focus {
+  border-color: #81c784;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.2);
+  background-color: #ffffff;
+}
+
+/* Button styling */
+.register-button {
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  background-color: #2e7d32;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-button:hover {
+  background-color: #4caf50;
+}
+
+/* Footer text */
+.register-footer {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #2e3d29;
+}
+
+.login-link {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #4caf50;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  .register-heading {
+    font-size: 2rem;
+  }
+
+  .register-form {
+    max-width: 90%;
+  }
+}

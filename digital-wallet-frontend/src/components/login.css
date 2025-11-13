@@ -1,0 +1,95 @@
+/* Full-screen container with soft green gradient */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #a8e6cf, #dcedc1); /* soft green gradient */
+  color: #2e3d29;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Glassy white card */
+.login-card {
+  background-color: rgba(255, 255, 255, 0.9); /* white with slight transparency */
+  border-radius: 25px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.login-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2e7d32; /* dark green */
+}
+
+/* Subtitle */
+.login-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #4caf50; /* medium green */
+}
+
+/* Input fields */
+.input-group input {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: 1px solid #c8e6c9; /* soft green border */
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  background-color: #f1f8f1; /* very light green */
+  color: #2e3d29;
+}
+
+/* Input focus effect */
+.input-group input:focus {
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.4);
+  border-color: #81c784;
+  background-color: #ffffff;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2e7d32; /* dark green button */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+.login-button:hover {
+  background-color: #4caf50; /* medium green hover */
+}
+
+/* Footer text */
+.login-footer {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #2e3d29;
+}
+
+/* Register link */
+.register-link {
+  color: #2e7d32;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  color: #4caf50;
+}

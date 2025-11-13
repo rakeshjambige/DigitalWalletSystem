@@ -1,0 +1,31 @@
+/* Background gradient and layout */
+.login-page {
+  background: linear-gradient(135deg, #e8f5e9, #a5d6a7);
+}
+
+/* Card styling */
+.login-card {
+  width: 400px;
+  background: linear-gradient(to bottom right, #ffffff, #f1f8e9);
+  border: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+}
+
+/* Input focus effect */
+.form-control:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+}
+
+/* Responsive fix */
+@media (max-width: 480px) {
+  .login-card {
+    width: 90%;
+  }
+}
